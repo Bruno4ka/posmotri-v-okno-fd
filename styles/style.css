@@ -3,6 +3,24 @@
 *::after {
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
 
 html {
   block-size: 100%;
@@ -46,8 +64,7 @@ html {
 
 .content__list-container {
   height: 298px;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -301,25 +318,6 @@ html {
 
 .content__list-container {
   position: relative;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-blockquote,
-fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-ul,
-ol {
-  list-style: none;
 }
 
 /* Кастомный скроллбар */
